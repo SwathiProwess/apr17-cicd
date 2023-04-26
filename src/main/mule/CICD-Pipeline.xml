@@ -4,7 +4,7 @@ http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/
     <http:listener-config name="demo-httpListenerConfig">
         <http:listener-connection host="0.0.0.0" port="8081" />
     </http:listener-config>
-    <apikit:config name="demo-config" api="CICD-Pipeline.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
+    <apikit:config name="demo-config" api="demo.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
     <http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="291063f0-5337-4485-8164-7a19e2267148" >
 		<http:request-connection host="app.zipcodebase.com" protocol="HTTPS">
 			<tls:context >
